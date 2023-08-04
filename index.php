@@ -30,6 +30,12 @@
             endif;
             ?>
 
+            <div id="pagination">
+              <?php if('bobcat_pagination') {bobcat_pagination(); } else{ ?>
+              <?php next_post_link(); ?>
+              <?php previous_post_link(); ?>
+            <?php } ?> 
+            </div>
             
 
         </div>

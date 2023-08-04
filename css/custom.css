@@ -205,7 +205,10 @@ content---------
 
 #body_area .blog_area{
   width: 100%;
-  margin-bottom: 50px;
+margin-bottom: 15px;
+background: #f9f5f5;
+padding: 10px,;
+padding: 15px;
 }
 
 #body_area .post_thumb{
@@ -287,7 +290,6 @@ a.read_more{
   text-decoration: navajowhite;
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 10px;
   transition: 0.5s;
 }
 
@@ -297,9 +299,37 @@ a.read_more:hover{
   font-size: 15px;
   text-decoration: navajowhite;
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 10px 20px;  
   transition: 0.5s;
 }
 
 
+/*-----------------
+Pagination---------
+------------*/
+
+#pagination{
+  margin-bottom: 50px;
+}
+
+#pagination p.pages{
+  background: #ea1a70;
+  color: white;
+  padding: 10px;
+}
+
+#pagination .page-numbers{
+  background: #ea1a70;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+
+#pagination .page-numbers:hover{
+  background: black;
+  transition: 0.5s;
+}
+
+#pagination .page-numbers.current{
+  background: black;
+}
