@@ -204,12 +204,13 @@ content---------
 }
 
 #body_area .blog_area{
-  width: 100%;
+width: 100%;
 margin-bottom: 15px;
-background: #f9f5f5;
 padding: 10px,;
 padding: 15px;
+box-shadow: 10px 10px 10px #ddd;
 }
+
 
 #body_area .post_thumb{
   overflow: hidden;
@@ -237,6 +238,7 @@ padding: 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  margin-top: 25px;
 }
 
 #body_area .post_details h2 a{
@@ -252,7 +254,20 @@ padding: 15px;
 
 
 /*-----------------
-Footer---------
+Copyright Styling---------
+-------------*/
+
+#footer{
+  background: #362c2c;
+  padding: 20px 20px;
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+/*-----------------
+Copyright Styling---------
 -------------*/
 
 #copyright_area{
@@ -332,4 +347,26 @@ Pagination---------
 
 #pagination .page-numbers.current{
   background: black;
+}
+
+.wp-block-tag-cloud a{
+	/* display: inline-block; */
+	margin-right: 5px;
+	color: white;
+	font-size: 12px !important;
+	text-decoration: none;
+	padding: 5px;
+	margin-bottom: 4px;
+	background: black;
+}
+
+.wp-block-tag-cloud a:hover{
+	background: #ea1a70;
+}
+
+ .child_sidebar h2 {
+	font-family: "Oswald", sans-serif;
+	line-height: 1.5em;
+	border-left: 2px solid darkslategray;
+	padding-left: 5px;
 }
