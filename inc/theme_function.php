@@ -56,10 +56,46 @@ $wp_customize->add_control('bobcat_copyright_section', array(
     'description' => 'Update Your Copyright Text',
     'setting' => 'bobcat_copyright_section',
     'section' => 'bobcat_footer_option',
-
-
 ));
+
+//Theme color
+
+ $wp_customize -> add_section('bobcat_colors', array(
+    'title' => __('Theme Color', 'bobcat'),
+    'description' => 'Change Theme Color',
+ ));
+
+ $wp_customize ->add_setting('bobcat_bg_color', array(
+    'default' => '#fff',
+ ));
+
+ $wp_customize ->add_control( new WP_Customize_Color_Control($wp_customize, 'bobcat_bg_color', array(
+    'label' => 'Background Color',
+    'section' => 'bobcat_colors',
+    'setting' => 'bobcat_bg_color',
+ )));
+
+ $wp_customize ->add_setting('bobcat_link_color', array(
+    'default' => '#ea1a70',
+ ));
+
+ $wp_customize ->add_control( new WP_Customize_Color_Control($wp_customize, 'bobcat_link_color', array(
+    'label' => 'Link Color',
+    'section' => 'bobcat_colors',
+    'setting' => 'bobcat_link_color',
+ )));
 
 }
 
 add_action('customize_register', 'bobcat_customizar_register');
+
+function bobcat_theme_color_cus(){
+    ?>
+    <style>
+        body{background: <?php echo get_theme_mod('bobcat_bg_color'); ?>}
+        :root{ --pink:<?php echo get_theme_mod('bobcat_link_color'); ?>}
+    </style>
+    <?php
+}
+
+add_action('wp_head', 'bobcat_theme_color_cus');

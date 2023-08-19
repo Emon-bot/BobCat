@@ -1,3 +1,7 @@
+:root{
+  --pink:#ea1a70;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   }
@@ -79,7 +83,7 @@ img {
   font-size: 17px;
 }
 #header_area .col-md-9 ul li a:hover {
-  background: #ea1a70;
+  background: ;
   color: #fff;
 }
 
@@ -108,7 +112,7 @@ img {
   color: #262626;
 }
 #header_area .col-md-9 ul li:hover a {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -129,7 +133,7 @@ img {
   left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
 }
 #header_area .col-md-9 ul ul li:hover ul li a {
@@ -137,7 +141,7 @@ img {
   color: #fff;
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
 }
 
@@ -208,7 +212,7 @@ width: 100%;
 margin-bottom: 15px;
 padding: 10px,;
 padding: 15px;
-box-shadow: 10px 10px 10px #ddd;
+box-shadow: 10px 10px 20px #ddd;
 }
 
 
@@ -247,7 +251,7 @@ box-shadow: 10px 10px 10px #ddd;
 }
 
 #body_area .post_details h2 a:hover{
-  color: #ea1a70;
+  color: var(--pink);
   transition: 0.5s;
 }
 
@@ -283,7 +287,7 @@ Copyright Styling---------
 }
 
 #copyright_area p a{
-  color: #ea1a70;
+  color: var(--pink);
 }
 
 #copyright_area p a:hover{
@@ -299,7 +303,7 @@ Read_More---------
 ------------*/
 
 a.read_more{
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
   font-size: 15px;
   text-decoration: navajowhite;
@@ -328,13 +332,13 @@ Pagination---------
 }
 
 #pagination p.pages{
-  background: #ea1a70;
+  background: var(--pink);
   color: white;
   padding: 10px;
 }
 
 #pagination .page-numbers{
-  background: #ea1a70;
+  background: var(--pink);
   color: white;
   padding: 5px 10px;
   transition: 0.5s;
@@ -361,7 +365,7 @@ Pagination---------
 }
 
 .wp-block-tag-cloud a:hover{
-	background: #ea1a70;
+	background: var(--pink);
 }
 
  .child_sidebar h2 {
@@ -369,4 +373,33 @@ Pagination---------
 	line-height: 1.5em;
 	border-left: 2px solid darkslategray;
 	padding-left: 5px;
+}
+
+/*-----------------
+Styling Comment Area---------
+------------*/
+
+label {
+	display: block;
+}
+
+textarea {
+	/* resize: vertical; */
+	width: 100%;
+}
+
+
+/*-----------------
+Styling Archive Area---------
+------------*/
+
+#archive_title{
+  background: var(--pink);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#archive_title h1{
+  color: #fff;
+
 }
