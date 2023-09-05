@@ -22,6 +22,7 @@ h6 {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 
@@ -113,7 +114,7 @@ img {
 }
 #header_area .col-md-9 ul li:hover a {
   background: var(--pink);
-  color: #fff;
+  color: #f113ed70;
 }
 #header_area .col-md-9 ul li:hover ul li a {
   background: none;
@@ -338,7 +339,7 @@ Pagination---------
 }
 
 #pagination .page-numbers{
-  background: var(--pink);
+  background: #ea1a70;
   color: white;
   padding: 5px 10px;
   transition: 0.5s;
@@ -365,7 +366,7 @@ Pagination---------
 }
 
 .wp-block-tag-cloud a:hover{
-	background: var(--pink);
+	background: red;
 }
 
  .child_sidebar h2 {
@@ -401,5 +402,33 @@ Styling Archive Area---------
 
 #archive_title h1{
   color: #fff;
+}
 
+/*-----------------
+Styling Service Area---------
+------------*/
+
+#service-area {
+  /* padding: 10px; */
+ padding: 0;
+  grid-template-columns: 3;
+}
+
+#service-area .child-service{
+  background: #ddd;
+  box-shadow: 0 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: -15px;
+  
+}  
+
+.child_sidebar .col-md-4{
+    width: 100%;
+    max-width: 490px;
+}
+
+.child_sidebar #service-area{
+  width: 330px;
 }
