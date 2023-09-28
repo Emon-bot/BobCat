@@ -3,9 +3,13 @@
 add_theme_support('title-tag');
 
 //Thumbnail Image Area
-add_theme_support( 'post-thumbnails', array('page', 'post', 'service'));
+add_theme_support( 'post-thumbnails', array('page', 'post', 'service', 'slider'));
 add_image_size( 'post-thumbnails', 970, 350, true);
 add_image_size( 'service', 450, 400, true);
+
+// add_image_size('slider', 1920, 700, true);
+
+
 
 //Excerpt to 40 words
 

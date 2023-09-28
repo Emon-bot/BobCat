@@ -432,3 +432,30 @@ Styling Service Area---------
 .child_sidebar #service-area{
   width: 330px;
 }
+
+/*-----------------
+Slider Area---------
+------------*/
+
+#slider-area img{
+  width: 100%;
+  height: 600px;
+}
+
+#slider-area{
+  margin: 0px;
+  padding: 0px;
+}
+
+.bx-wrapper {
+	position: relative;
+	margin-bottom: 60px;
+	padding: 0px;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 0px #ccc;
+	border: 0px solid #fff;
+	background: #fff;
+}
